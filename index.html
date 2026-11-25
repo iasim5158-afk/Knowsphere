@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="KnowSphere — explore knowledge, discover images, and learn about the world.">
+  <title>KnowSphere — A World of Knowledge</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="KnowSphere home"><span class="brand-mark">K</span><span>Know<span class="brand-light">Sphere</span></span></a>
+    <nav><a href="#explore">Explore</a><a href="#about">About</a></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">A WORLD OF KNOWLEDGE</div>
+      <h1>Curiosity has <span>no limits.</span></h1>
+      <p class="hero-copy">Explore ideas, discover the world, and connect the dots between everything.</p>
+      <form id="search-form" class="searchbar">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input id="search-input" type="search" placeholder="Search anything — space, history, animals..." autocomplete="off" aria-label="Search knowledge">
+        <button type="submit">Search</button>
+      </form>
+      <p class="search-hint">Search KnowSphere articles and discover results from Wikipedia.</p>
+    </section>
+
+    <section id="explore" class="content-wrap">
+      <div class="section-heading">
+        <div><div class="eyebrow">START EXPLORING</div><h2>Explore knowledge</h2></div>
+        <span class="section-note">A growing library</span>
+      </div>
+      <div class="category-grid">
+        <button class="category" data-query="Space"><span>✦</span><b>Space</b><small>Stars, planets & beyond</small></button>
+        <button class="category" data-query="History"><span>⌛</span><b>History</b><small>People, places & events</small></button>
+        <button class="category" data-query="Science"><span>⚛</span><b>Science</b><small>Discover how things work</small></button>
+        <button class="category" data-query="Nature"><span>❋</span><b>Nature</b><small>Animals, plants & Earth</small></button>
+        <button class="category" data-query="Technology"><span>⌘</span><b>Technology</b><small>Ideas shaping tomorrow</small></button>
+        <button class="category" data-query="Geography"><span>◎</span><b>Geography</b><small>Countries & landscapes</small></button>
+      </div>
+
+      <section id="results-section" class="results-section" hidden>
+        <div class="section-heading result-heading"><div><div class="eyebrow">YOUR SEARCH</div><h2 id="results-title">Results</h2></div><button id="clear-results" class="text-button">Clear</button></div>
+        <div id="status" class="status" role="status"></div>
+        <div id="results-grid" class="results-grid"></div>
+        <div id="images-heading" class="images-heading" hidden><h3>Images from Wikimedia Commons</h3><p>Image credits and license details are available on each source page.</p></div>
+        <div id="images-grid" class="images-grid"></div>
+      </section>
+
+      <section class="featured">
+        <div class="section-heading"><div><div class="eyebrow">INSIDE KNOWSPHERE</div><h2>Featured discoveries</h2></div></div>
+        <div id="featured-grid" class="featured-grid"></div>
+      </section>
+    </section>
+
+    <section id="about" class="about-band">
+      <div class="about-inner"><div class="eyebrow">OUR PURPOSE</div><h2>Knowledge should be<br><span>open to everyone.</span></h2><p>KnowSphere is an independent learning project. Our goal is to make reliable knowledge easier to explore, understand, and connect.</p></div>
+    </section>
+  </main>
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">K</span><span>Know<span class="brand-light">Sphere</span></span></a><p>Independent knowledge project · Built to keep curiosity moving.</p><small>External search results are provided by Wikimedia services. KnowSphere is not affiliated with the Wikimedia Foundation.</small></footer>
+  <script src="app.js"></script>
+</body>
+</html>
